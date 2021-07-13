@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="travelweb.css">
+  <title>Explore the World</title>
+</head>
+<body>
+
+    <header class="showcase">
+        <div class="showcase-top">
+            <img src="logo.png" alt="" />
+            <a href="sign.html" class="btn btn-rounded">Sign In</a>
+        </div>
+        <div class="showcase-content">
+            <h1 class="ml2">World Explorer</h1>
+            <h2 class="ml7">
+                <span class="text-wrapper">
+                  <span class="letters">Travel throughout the World</span>
+                </span>
+              </h2>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            <a href="#" class="btn btn-xl btn-rounded"
+                >Let's go<i class="fas fa-chevron-right btn-icon"></i
+            ></a>
+        </div>
+    </header>
+    <section class="tabs" id="next">
+        <div class="container">
+            <div id="tab-1" class="tab-item tab-border">
+                <i class="fas fa-globe-europe fa-3x"></i>
+                <p class="hide-sm">Travel Planner</p>
+            </div>
+            <div id="tab-2" class="tab-item">
+                <i class="fas fa-plane fa-3x"></i>
+                <p class="hide-sm">Flights</p>
+            </div>
+            <div id="tab-3" class="tab-item">
+                <i class="fas fa-monument fa-3x"></i>
+                <p class="hide-sm">Sightseeing</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tab-content">
+        <div class="container">
+            <!-- Tab Content 1 -->
+            <div id="tab-1-content" class="tab-content-item">
+              <div class="tab-1-content-up">
+                    <div id="wrap">
+                       <form action="" autocomplete="on">
+                         <input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
+                       </form>
+                    </div>
+              </div>
+              <div class="tab-1-content-down">
+                    <div id="image2">
+                        <img src="kol.jpg" alt="" />
+                        <a href="#" class="text-md">Kolkata</a>
+                    </div>
+                    <div id="image2">
+                        <img src="shimla.jpg" alt="" />
+                        <a href="#" class="text-md">Shimla</a>
+                    </div>
+                    <div id="image2">
+                      <img src="mumbai.jpg" alt="" />
+                      <a href="#" class="text-md">Mumbai</a>
+                    </div>
+              </div>
+           </div>
+            
+
+            <!-- Tab Content 2 -->
+            <div id="tab-2-content" class="tab-content-item">
+                <div class="tab-2-content-show">
+                    <form>
+
+                        <fieldset class="radio-set">
+                                <input type="radio" name="direction" id="one way" value="one" />
+                                <label for="one way"><strong >One way</strong></label>
+                            
+                                <input type="radio" name="direction" id="round trip" value="round" />
+                                <label for="round trip"><strong>Round trip</strong></label>
+                           
+                                <input type="radio" name="direction" id="multi-city" value="multi" />
+                                <label for="multi-city"><strong>Multi city</strong></label>
+            
+                        </fieldset>
+                                
+                        <fieldset>
+                            <div class="field">
+                                <label for="from"><strong>From </strong></label>
+                                <input type="text1" name="source"  placeholder="Any worldwide city or airport" class="from" />
+                            </div>
+                            <div class="middle">
+                                <span>&rlhar;</span>
+                            </div>
+                            <div class="field">
+                                <label for="to"><strong>To </strong></label>
+                                <input type="text1" name="destination"  placeholder="Any worldwide city or airport"  class="two"/>
+                            </div>
+                        </fieldset>
+            
+                        <fieldset>
+                            <div class="field">
+                                <label for="depart"><strong>Depart on</strong></label>
+                                <input type="date" name="depart on" id="depart" placeholder="Pick a date" />
+                            </div>
+                            <div class="dir">
+                                    <span>&rlhar;</span>
+                                </div>
+                            <div class="field">
+                                <label for="return"><strong>Return on</strong></label>
+                                <input type="date" name="return on" id="return" placeholder="Pick a date" />
+                            </div>
+                        </fieldset>
+            
+            
+                        <fieldset>
+                            <div class="select-field">
+                                <label for="adults"><strong>Adults</strong></label>
+                                <select name="adult people" id="adults">
+                                    <option value="1" selected="selected">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="More than 5">More than 5</option>
+                                </select>
+                                <label id="hint">&nbsp;</label>
+            
+                            </div>
+                            <div class="select-field">
+                                <label for="children"><strong>Children</strong></label>
+                                <select name="child section" id="children">
+                                    <option value="0" selected="selected">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="More than 5">More than 5</option>
+                                </select>
+                                <label id="hint">2-11 years</label>
+            
+                            </div>
+            
+                            <div class="select-field">
+                                <label for="infants"><strong>Infants</strong></label>
+                                <select name="infant people" id="infants">
+                                    <option value="0" selected="selected">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="more than 4">More than 4</option>
+                                </select>
+                                <label id="hint">Below 2 years</label>
+                            </div>
+            
+                        </fieldset>
+                        <fieldset class="mode">
+            
+                                <details>
+                                        <summary>More options: Class of travel, Airline Preference</summary>
+                                    
+                    
+                                            <div class="field">
+                                                <label for="class of travel">Class-oftravel</label>
+                                                <select name="class service" class="class-of-travel">
+                                                    <option value="Economy" selected="selected">Economy</option>
+                                                    <option value="Business">Business</option>
+                                                </select>
+                                            </div>
+                                        
+                                            <div class="field">
+                                                <label for="preferred airline">Preferred airline</label>
+                                                <input type="text1" name="airline" placeholder="Airline name" class="airline"/>
+                                            </div>
+                                        
+                                    </details>
+                                
+            
+                        </fieldset>
+                        <a href="#" class="btn btn-rounded" type="submit1">Search Flights</a>                       
+            
+            
+                    </form>
+                </div>
+            </div>
+       
+
+            <!-- Tab Content 3 -->
+            <div id="tab-3-content" class="tab-content-item">
+                <div class="tab-3-content-top">
+                    <div id="wrap">
+                        <form action="" autocomplete="on">
+                        <input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
+                        </form>
+                    </div>       
+                </div>
+                <div class="tab-3-content-bottom">	
+                    <div id="image1">
+                        <img src="goa1.jpg" alt="" />
+                        <a href="#" class="text-md">Goa</a>
+                    </div>
+                    <div id="image1">
+                        <img src="delhi (1).jpg" alt="" />
+                        <a href="#" class="text-md">Delhi</a>
+                    </div>
+                    <div id="image1">
+                      <img src="jnk.jpg" alt="" />
+                      <a href="#" class="text-md">Jammu & Kashmir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Questions?</p>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Travel Relations</a></li>
+                <li><a href="#">Ways To Watch</a></li>
+                <li><a href="#">Trip Information</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Redeem Gift Cards</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Speed Test</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <script src="travelmain.js"></script>
+</body>
+</html>
