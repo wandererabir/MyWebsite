@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina Outline">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+   <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="index.css">
   <title>Home</title>
 </head>
 <body>
-  <!--
+
  <section class="navigation">
     <div class="nav-container">
       <div class="brand">
@@ -45,25 +48,9 @@
       </nav>
     </div>
  </section>
--->
-<header>
-  <a class="company-logo" href="index.html"><strong>Abir Paul</strong></a>
-  <nav class="navbar">
-    <ul class="nav-items">
-      <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
-      <li class="nav-item"><a href="projects.html" class="nav-link">PROJECTS</a></li>
-      <li class="nav-item"><a href="resume.html" class="nav-link">PORTFOLIO</a></li>
-      <li class="nav-item"><a href="contactus.html" class="nav-link">CONTACT</a></li>
-    </ul>
-  </nav>
-  <div class="menu-toggle">
-    <i class="bx bx-menu"></i>
-    <i class="bx bx-x"></i>
-  </div>
-</header>
 
 
-<section id="rotating" class="container">
+<section id="rotating" class="container-fluid">
     <div class="rotating-text">
       <p>Hi, I am</p>
       <p>
@@ -75,7 +62,58 @@
       </p>
     </div>
  </section>
-
+<section class="container-fluid blogs" >
+ <div class="blog-card">
+  <div class="meta">
+    <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
+    <ul class="details">
+      <li class="author"><a href="#">John Doe</a></li>
+      <li class="date">Aug. 24, 2015</li>
+      <li class="tags">
+        <ul>
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">Code</a></li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="description">
+    <h2>Learning to Code</h2>
+    <h3>Opening a door to the future</h3>
+    <p1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p1>
+    <p1 class="read-more">
+      <a href="#">Read More</a>
+    </p1>
+  </div>
+</div>
+<div class="blog-card alt">
+  <div class="meta">
+    <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"></div>
+    <ul class="details">
+      <li class="author"><a href="#">Jane Doe</a></li>
+      <li class="date">July. 15, 2015</li>
+      <li class="tags">
+        <ul>
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">Code</a></li>
+          <li><a href="#">JavaScript</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="description">
+    <h2>Mastering the Language</h2>
+    <h3>Java is not the same as JavaScript</h3>
+    <p1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p1>
+    <p1 class="read-more">
+      <a href="#">Read More</a>
+    </p1>
+  </div>
+</div>
+</section>
+ <!--
  <section class="blog">
   <div class="projcard-container">
 		
@@ -147,8 +185,9 @@
 
   </div>
  </section>
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+ -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script  src="index.js"></script>
   
   </body>
