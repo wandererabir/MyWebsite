@@ -1,5 +1,5 @@
 //NAVIGATION BAR
-/*(function($) { // Begin jQuery
+(function($) { // Begin jQuery
     $(function() { // DOM ready
       // If a link has a dropdown, add sub menu toggle.
       $('nav ul li a:not(:only-child)').click(function(e) {
@@ -22,9 +22,9 @@
       });
     }); // end DOM ready
   })(jQuery); // end jQuery
-*/
 
-  //Rotating Intro
+
+//Rotating Intro
   "use strict";
 let words = document.querySelectorAll(".word");
 words.forEach(word => {
