@@ -21,13 +21,32 @@ body {
 
 .brand {
   position: absolute;
-  padding-left: 20px;
-  float: left;
   line-height: 70px;
   text-transform: uppercase;
-  font-family:sans-serif;
-  font-size: 1.8em;
-  font-weight: 1000;
+  font-size: 3.2em;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  --color1: rgb(255, 255, 255);
+  --color2: rgb(236, 22, 22);
+  --color3: rgb(45, 43, 184);
+  --color4: rgb(196, 230, 48);
+  font-family: Londrina Outline;
+  --interval: 1s;
+  text-shadow: 
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4);
+  will-change: filter, color;
+  filter: saturate(60%);
+  animation: flicker steps(100) var(--interval) 1s infinite;
+
+}
+@keyframes flicker {
+  50% {
+    color: white;
+    filter: saturate(200%) hue-rotate(20deg);
+  }
 }
 .brand a,
 .brand a:visited {
