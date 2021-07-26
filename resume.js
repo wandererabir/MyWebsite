@@ -18,11 +18,18 @@
   });
 })(jQuery); 
 
-  //Resume
-$(function() {
-    $('a[href*="#!..."]').on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-    });
-  });
+//color tags
+function tag_color() {
+  var letters = '0123456789ABCDEF'.split('');
+  var color = '#';
+  for (var i = 0; i < 6; i++ ) {
+    color += letters[Math.round(Math.random() * 15)];
+  }
+  return color;
+}
 
+$(function() {
+  $("li").each(function() {
+    $(this).css("background-color", tag_color());
+  });
+});

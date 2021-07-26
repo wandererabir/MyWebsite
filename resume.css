@@ -182,3 +182,58 @@ nav ul li ul li a {
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
 }
+
+
+/*intro section*/
+.intro{
+  height: 65%;
+  background: url(https://images.unsplash.com/photo-1516663713099-37eb6d60c825?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)center center / cover no-repeat;
+}
+h1{
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-top:5%;
+  padding-left: 12%;
+  padding-bottom: 2%;
+  font-size:2vmax;
+  font-weight:300;
+}
+h2{
+  color: white;
+  padding-left: 12%;
+  line-height: 30px;
+  font-family: "Ubuntu";
+  font-size:2vmax;
+  font-weight:500 ;
+}
+h3{
+  color: white;
+  padding-left: 12%;
+  padding-top: 2%;
+  font-family: "Ubuntu";
+  font-size:1.2vmax;
+}
+.intro i {
+  margin-right: 5px;
+}
+
+.color-tags {
+  margin: 40px auto 0 auto;
+  padding-left: 12%;
+  padding-right: 5%;
+}
+.color-tags li {
+  width: 7vmax;
+  padding: 1vmax;
+  list-style: none;
+  font-size: 0.9vmax;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  color: #FFFFFF;
+  float: left;
+  margin: 0px 10px 15px 0px;
+  border-radius: 5px;
+  border-top: 1px solid rgb(0, 0, 0);
+  box-shadow: rgba(255, 244, 244, 0.719) 2px 2px 2px;
+  transition: 0.5s;
+}
