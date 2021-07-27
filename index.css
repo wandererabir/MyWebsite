@@ -23,8 +23,8 @@ body {
   font-size: 3.2em;
   font-weight: 600;
   color: rgb(255, 255, 255);
-  --color1: rgb(255, 255, 255);
-  --color2: rgb(236, 22, 22);
+  --color1: rgb(0, 0, 0);
+  --color2: rgb(255, 0, 0);
   --color3: rgb(45, 43, 184);
   --color4: rgb(196, 230, 48);
   font-family: Londrina Outline;
@@ -266,7 +266,7 @@ nav ul li ul li a {
 .blogs{
   padding-top: 20px;
   padding-bottom: 20px;
-  background: linear-gradient(-45deg, #000000, #55091a, #161250, #c8fc2f,#7c1212);
+  background: linear-gradient(-45deg, #000000, #55091a, #161250, #51ff00,#7c1212);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }

@@ -33,3 +33,8 @@ $(function() {
     $(this).css("background-color", tag_color());
   });
 });
+
+//AOS.js animation
+AOS.init({
+  duration: 1200,
+})
