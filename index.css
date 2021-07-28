@@ -3,13 +3,10 @@
 html,
 body {
   height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-body {
+  background-color: black;
   font: 100% "Helvetica";
 }
+
 
 .navigation {
   height: 70px;
@@ -189,7 +186,7 @@ nav ul li ul li a {
 
 /* Rotating intro */
 #rotating{
-  background:black;
+  background: url(https://images.unsplash.com/photo-1468657988500-aca2be09f4c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)center center / cover no-repeat;
   align-content: center;
   height: 40%;
 }
@@ -266,7 +263,7 @@ nav ul li ul li a {
 .blogs{
   padding-top: 20px;
   padding-bottom: 20px;
-  background: linear-gradient(-45deg, #000000, #55091a, #161250, #51ff00,#7c1212);
+  background: linear-gradient(-45deg, #005713, #3d010e, #080075, #740000,#000000);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
@@ -466,7 +463,20 @@ nav ul li ul li a {
     padding-left: 25px;
   }
 }
+footer {
+  background: #000000;
+  height: 30px;
+  text-align: center;
+  padding-top:8px;
+}
 
+footer p,h1{
+  font-size: 16px;
+  font-family: Roboto Condensed;
+  font-weight: 500;
+  color: #ffffff;
+  align-content: center;
+}
 /*Blog Part v1
 .blog{
   align-content: center;

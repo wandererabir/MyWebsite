@@ -4,15 +4,11 @@ body {
   height: 100%;
   justify-content: center;
   align-items: center;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat; background-size: cover;
-  background-image: url(https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80);
 }
 
 body {
-  overflow: hidden;
   font: 100% "Helvetica";
+  background-color:black;
 }
 .navigation {
   height: 70px;
@@ -189,13 +185,13 @@ nav ul li ul li a {
 
 /*Social Media*/
 
-#socialmedia {
-    margin: 0;
-    padding: 0;
-    background-color:black;
-  }
+.socialm{
+  width: 100%;
+  height: 84%;
+  background: url(https://images.unsplash.com/photo-1468657988500-aca2be09f4c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)center center / cover no-repeat;
+}
 
- #social {
+.socialm #social {
     display: flex;
     position: absolute;
     top: 50%;
@@ -268,4 +264,18 @@ nav ul li ul li a {
   }
   #social li:nth-child(5) a:before {
     background: #dd4b39;
+  }
+
+  footer {
+    background: #000000;
+    height: 32px;
+    text-align: center;
+    line-height: 10px;
+  }
+
+  footer p,h1{
+    font-size: 16px;
+    font-family: Roboto Condensed;
+    font-weight: 500;
+    color: #ffffff;
   }
