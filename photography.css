@@ -1,7 +1,7 @@
 @charset "UTF-8";
 html,
 body {
-  min-height: 100vh;
+  height: 100%;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat; background-size: cover;
@@ -13,6 +13,9 @@ body {
 }
 
 .navigation {
+  position:sticky;
+  top: 0;
+  z-index: 1;
   height: 70px;
   background: #262626;
 }
@@ -222,5 +225,20 @@ h1{
 	transform: scale(1.15);
 }
 
+
+footer {
+  background: #000000;
+  height: auto;
+  text-align: center;
+  padding-top:8px;
+}
+
+footer p,h2{
+  font-size: 16px;
+  font-family: Roboto Condensed;
+  font-weight: 500;
+  color: #ffffff;
+  align-content: center;
+}
 
  

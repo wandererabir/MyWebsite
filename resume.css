@@ -9,8 +9,11 @@ body {
 }
 
 .navigation {
+  position: sticky;
+  top: 0;
   height: 70px;
   background: #262626;
+  z-index: 1;
 }
 
 .brand {
@@ -184,6 +187,7 @@ nav ul li ul li a {
 
 /*intro section*/
 .intro{
+  z-index: 0;
   height: 65%;
   background: url(https://images.unsplash.com/photo-1516663713099-37eb6d60c825?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)center center / cover no-repeat;
 }
@@ -359,7 +363,7 @@ h5 {
 
 footer {
   background: #000000;
-  height: 50px;
+  height: auto;
   text-align: center;
 }
 footer p,h6{
