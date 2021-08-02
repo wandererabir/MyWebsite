@@ -2,15 +2,17 @@
 html,
 body {
   height: 100%;
-  justify-content: center;
-  align-items: center;
+  background-color: white;
 }
 
 body {
   font: 100% "Helvetica";
-  background-color:black;
 }
+
 .navigation {
+  position:sticky;
+  top: 0;
+  z-index: 1;
   height: 70px;
   background: #262626;
 }
@@ -183,99 +185,5 @@ nav ul li ul li a {
   transform: rotate(-45deg);
 }
 
-/*Social Media*/
 
-.socialm{
-  width: 100%;
-  height: 84%;
-  background: url(https://images.unsplash.com/photo-1468657988500-aca2be09f4c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)center center / cover no-repeat;
-}
 
-.socialm #social {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 48%;
-    transform: translate(-50%, -50%);
-  }
-  
-  #social li {
-    list-style: none;
-  }
-  
-  #social li a {
-    width: 7vw;
-    height: 7vw;
-    background-color: rgb(224, 215, 215);
-    text-align: center;
-    line-height: 7.5vw;
-    font-size: 4vw;
-    margin: 0 10px;
-    display: block;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    border: 3px solid #fff;
-    z-index: 1;
-  }
-  
-  #social li a .icon {
-    position: relative;
-    color: #262626;
-    transition: .5s;
-    z-index: 3;
-  }
-  
-  #social li a:hover .icon {
-    color: #fff;
-    transform: rotateY(360deg);
-  }
-  
-  #social li a:before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #f00;
-    transition: .5s;
-    z-index: 2;
-  }
-  
-  #social li a:hover:before {
-    top: 0;
-  }
-  
-  #social li:nth-child(1) a:before{
-    background: #3b5999;
-  }
-  
-  #social li:nth-child(2) a:before{
-    background: #55acee;
-  }
-  
- #social li:nth-child(3) a:before {
-    background: #0077b5;
-  }
-  
- #social li:nth-child(4) a:before {
-    background: #000000;
-  }
-  #social li:nth-child(5) a:before {
-    background: #dd4b39;
-  }
-
-  footer {
-    background: #000000;
-    height: auto;
-    text-align: center;
-    line-height: 10px;
-  }
-
-  footer p,h1{
-    font-size: 16px;
-    font-family: Roboto Condensed;
-    font-weight: 500;
-    color: #ffffff;
-  }
