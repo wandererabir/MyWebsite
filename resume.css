@@ -185,6 +185,7 @@ nav ul li ul li a {
 }
 
 
+
 /*intro section*/
 .intro{
   z-index: 0;
@@ -263,6 +264,7 @@ h4{
   font-weight:800;
 }
 h5 {
+  color:rgb(255, 255, 255);
   font-size: 32px;
   margin-top: 30px;
   font-family: "Oswald", sans-serif;
@@ -282,8 +284,8 @@ h5 {
   transition: 0.3s;
   max-width: 300px;
   margin: 15px;
-  background: #fff;
-  border: 1px solid #CB6074;
+  background: rgb(255, 255, 255);
+  border: 1px solid #690000;
   text-align: center;
   cursor: pointer;
 }
@@ -296,7 +298,7 @@ h5 {
 .blog-wrapper .blog-card .card-img {
   position: relative;
   text-align: center;
-  background: #CB6074;
+  background: #690000;
 }
 .blog-wrapper .blog-card .card-img img {
   -webkit-transition: 0.3s;
@@ -304,7 +306,7 @@ h5 {
   transition: 0.3s;
   max-height: 180px;
   width: 100%;
-  border-bottom: 4px solid #CB6074;
+  border-bottom: 4px solid #690000;
 }
 .blog-wrapper .blog-card .card-img:before {
   content: "";
@@ -314,7 +316,7 @@ h5 {
   margin-left: -10px;
   width: 0;
   height: 0;
-  border-top: solid 10px #CB6074;
+  border-top: solid 10px #690000;
   border-left: solid 10px transparent;
   border-right: solid 10px transparent;
 }
