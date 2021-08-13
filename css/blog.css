@@ -220,7 +220,7 @@ nav ul li ul li a {
 .projcard-container {
 	margin-left: auto;
 	margin-right: auto;
-	width: 1000px;
+	width:80vw;
 }
 .projcard {
 	position: relative;
@@ -231,7 +231,6 @@ nav ul li ul li a {
 	background-color: #fff;
 	border: 2px solid #ddd;
 	font-size: 18px;
-	overflow: hidden;
 	cursor: pointer;
 	box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
 	transition: box-shadow 0.2s ease, transform 0.2s ease;
@@ -260,21 +259,7 @@ nav ul li ul li a {
 	bottom: 0;
 	left: 0;
 }
-.projcard-img {
-	position: absolute;
-	height: 300px;
-	width: 400px;
-	top: 0;
-	left: 0;
-	transition: transform 0.2s ease;
-}
-.projcard:nth-child(2n) .projcard-img {
-	left: initial;
-	right: 0;
-}
-.projcard:hover .projcard-img {
-	transform: scale(1.05) rotate(1deg);
-}
+
 .projcard:hover .projcard-bar {
 	width: 70px;
 }
@@ -282,38 +267,11 @@ nav ul li ul li a {
 	position: absolute;
 	top: 7%;
 	bottom: 7%;
-	left: 430px;
-	width: calc(100% - 470px);
+	left: 40px;
+	width: calc(100% - 40px);
 	font-size: 17px;
 }
-.projcard:nth-child(2n) .projcard-textbox {
-	left: initial;
-	right: 430px;
-}
-.projcard-textbox::before,
-.projcard-textbox::after {
-	content: "";
-	position: absolute;
-	display: block;
-	background: #ff0000bb;
-	background: #fff;
-	top: -20%;
-	left: -55px;
-	height: 140%;
-	width: 60px;
-	transform: rotate(8deg);
-}
-.projcard:nth-child(2n) .projcard-textbox::before {
-	display: none;
-}
-.projcard-textbox::after {
-	display: none;
-	left: initial;
-	right: -55px;
-}
-.projcard:nth-child(2n) .projcard-textbox::after {
-	display: block;
-}
+
 .projcard-textbox * {
 	position: relative;
 }
@@ -358,13 +316,13 @@ nav ul li ul li a {
 .projcard-customcolor .projcard-bar { background-color: var(--projcard-color); }
 .projcard-customcolor::before { background-image: linear-gradient(-70deg, var(--projcard-color), transparent 50%); }
 .projcard-customcolor:nth-child(2n)::before { background-image: linear-gradient(-250deg, var(--projcard-color), transparent 50%); }
+
 .projcard-description {
 	z-index: 10;
 	font-size: 15px;
 	color: #424242;
-	height: 125px;
-	overflow: hidden;
-	text-overflow: ellipsis;
+	height: 105px;
+	overflow: auto;
 }
 .projcard-tagbox {
 	position: absolute;
