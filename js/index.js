@@ -62,8 +62,3 @@ let rotateText = () => {
 };
 rotateText();
 setInterval(rotateText, 4000);
-
-//Blog Part
-//document.querySelectorAll(".projcard-description").forEach(function(box) {
-//	$clamp(box, {clamp: 2});
-//});

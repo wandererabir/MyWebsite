@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Condensed">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina Outline">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-   <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/index.css">
   <title>Home</title>
 </head>
@@ -16,7 +15,7 @@
 
  <section class="navigation">
     <div class="nav-container">
-      <div class="brand">
+      <div class="navbar-brand brand">
         <a href="index.html">ABIR PAUL</a>
       </div>
       <nav>
@@ -50,21 +49,77 @@
     </div>
  </section>
 
+
 <section id="rotating" class="container-fluid rotate">
     <div class="rotating-text">
-      <p>Hi, I am</p>
-      <p>
+      <p class="text">Hi, I am</p>
+      <p class="text">
         <span class="word one">Abir.</span>
-        <span class="word two">persistent.</span>
-        <span class="word three">motivated.</span>
-        <span class="word four">persuasive.</span>
-        <span class="word five">reliable.</span>
+        <span class="word two">Persistent.</span>
+        <span class="word three">Optimistic.</span>
+        <span class="word four">Flexible.</span>
+        <span class="word five">Honest.</span>
       </p>
     </div>
  </section>
 
-<section class="container-fluid blogs" >
- <div class="blog-card">
+
+ <section class="container-fluid projects">
+   <h1>Projects</h1>
+   <div class="row mx-auto justify-content-center">
+      <div class="col-sm-3">
+         <div class="card text-dark bg-warning mb-4" style="max-width: 18rem;">
+             <div class="card-header">Data Science</div>
+                 <div class="card-body">
+                     <h5 class="card-title">Stock Prediction</h5>
+                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     <a href="#" class="btn btn-primary">Go somewhere</a>
+                 </div>
+        </div>
+      </div>
+
+     <div class="col-sm-3">
+      <div class="card text-dark bg-info mb-4" style="max-width: 18rem;">
+          <div class="card-header">Web Development</div>
+              <div class="card-body">
+                  <h5 class="card-title">Chat App</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+     </div>
+     </div>
+
+     <div class="col-sm-3">
+      <div class="card text-dark bg-danger mb-4" style="max-width: 18rem;">
+          <div class="card-header text-white">Others</div>
+              <div class="card-body text-white">
+                  <h5 class="card-title">Stock Prediction</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+      </div>
+     </div>   
+
+     <div class="col-sm-3 align-self-center ">
+       <a href="blog.html" class="btn btn-dark link">See More</a>
+     </div> 
+
+   </div>
+
+ </section>
+
+x
+<section class="container-fluid blogs">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item "><a style="text-decoration: none; color:rgb(255, 255, 255);" href="index.html">Home</a></li>
+      <li class="breadcrumb-item text-white">My Space</li>
+      <li class="breadcrumb-item active"><a style="text-decoration: none; color:rgb(255, 255, 255);" href="blog.html">Blogs</a></li>
+    </ol>
+  </nav>
+  <br><br>
+  <h1> Blogs</h1>
+  <div class="blog-card">
   <div class="meta">
     <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
     <ul class="details">
@@ -88,8 +143,9 @@
       <a href="blog.html">Read More</a>
     </p1>
   </div>
-</div>
-<div class="blog-card alt">
+  </div>
+
+  <div class="blog-card alt">
   <div class="meta">
     <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"></div>
     <ul class="details">
@@ -112,15 +168,19 @@
       <a href="blog.html">Read More</a>
     </p1>
   </div>
-</div>
+  </div>
+
 </section>
 
+<!--
  <footer>
       <h4><strong>Engineered</strong> &#128515; by Abir Paul.</h4>
       <p>All Rights Reserved &copy; 2021</p>
 </footer>
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script  src="../js/index.js"></script>
   
   </body>
