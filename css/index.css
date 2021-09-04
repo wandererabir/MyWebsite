@@ -41,9 +41,9 @@ body {
   font-weight: 600;
   color: rgb(255, 255, 255);
   --color1: rgb(255, 255, 255);
-  --color2: rgb(236, 22, 22);
-  --color3: rgb(45, 43, 184);
-  --color4: rgb(196, 230, 48);
+  --color2: rgb(255, 251, 0);
+  --color3: rgb(255, 0, 0);
+  --color4: rgb(76, 0, 255);
   font-family: Londrina Outline;
   --interval: 1s;
   text-shadow: 
@@ -321,11 +321,11 @@ a{
   color: #111
 }
 
-.photo{
+.myphoto{
   position: relative;
   margin: 1rem auto;
 }
-.photo img{
+.myphoto img{
   width: 400px;
   height: 480px;
   object-fit: cover;
@@ -333,11 +333,11 @@ a{
   box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
   transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.photo:hover img{
+.myphoto:hover img{
   box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
 }
 
-.photo:hover img{
+.myphoto:hover img{
   margin-top: 0;
 }
 
@@ -351,7 +351,7 @@ a{
 
  @media only screen and (max-width: 600px) {
 
-  .photo img{
+  .myphoto img{
     width: 200px;
     height: 240px;
   }

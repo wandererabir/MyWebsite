@@ -23,9 +23,9 @@ body {
   font-weight: 600;
   color: rgb(255, 255, 255);
   --color1: rgb(255, 255, 255);
-  --color2: rgb(236, 22, 22);
-  --color3: rgb(45, 43, 184);
-  --color4: rgb(196, 230, 48);
+  --color2: rgb(255, 251, 0);
+  --color3: rgb(255, 0, 0);
+  --color4: rgb(76, 0, 255);
   font-family: Londrina Outline;
   --interval: 1s;
   text-shadow: 
