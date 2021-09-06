@@ -442,18 +442,13 @@ a{
   display: inline-block;
 }
 .blog-card .details .author:before {
-  font-family: FontAwesome;
   margin-right: 10px;
-  content: "";
 }
 .blog-card .details .date:before {
-  font-family: FontAwesome;
   margin-right: 10px;
-  content: "";
+
 }
 .blog-card .details .tags ul:before {
-  font-family: FontAwesome;
-  content: "";
   margin-right: 10px;
 }
 .blog-card .details .tags li {
@@ -492,8 +487,7 @@ a{
   position: relative;
 }
 .blog-card .description .read-more a:after {
-  content: "";
-  font-family: FontAwesome;
+  content:"→";
   margin-left: -10px;
   opacity: 0;
   vertical-align: middle;
